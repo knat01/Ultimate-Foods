@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us - Ultimate Foods</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='./css/contactForm.css'>
+    <meta name="author" content="CPS530 Group 9 - Section 3 & 4" >
+    <meta name="description" content="Ultimate Foods - CPS530 Final Project">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">   
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Scripts to enable the menu bar to collapse in mobile size -->
+ 	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Kad1qil9rm7vgc30WGzXhEbslRX2QV-JNvYV368ABQ45h44dTzP5GmvpqIsLRmKJv5eyaeMtsO2FbloI8rak4MGf7td79LReAfeOnVbhqTSW4WsE9vqDY6Y1k1sS_fo__Pg4txrG_EFqkA8u5Kt2tg" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+</head>
+<body style="overflow-x: hidden;">
+
+    <!-- Navigation bar using Bootstrap NavBar class -->
+    <!-- Source: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <!-- Followed a youtube tutorial to set up the collapsable menu  -->
+    <!-- Source: https://www.youtube.com/watch?v=23bpce-5s8I -->    
+	<div class="navBar">
+		<nav class="navbar navbar-expand-sm custom-navbar" >
+			<a href="./index.html">
+				<img src="./png/platterlogo1.png" class="navbar-brand" style="height:60px; width:80px;"></img>
+			</a>
+			<button class="navbar-toggler custom-toggler">
+				<span class="navbar-toggler-icon" data-toggle="collapse" data-target="#navbar">
+				
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav ml-auto ">
+					<li class="nav-item"></li>
+					<a href="./menuIndex.html" class="nav-link">Menu</a>
+					<a href="./coupons.html" class="nav-link">Coupons</a>
+                    <a href="./contactForm.html" class="nav-link">Contact Us </a>
+					<a href="./locations.html" class="nav-link">Locations</a>
+					
+				</ul>			
+			</div>
+		</nav>
+	</div><br><br><br>
+
+
+    <div class="row" id="banner">
+        <div class="col-lg-12">
+        <p style="	color: #5C2E00; ">C O N T A C T &nbsp;&nbsp;&nbsp; U S </p>
+        <img src="./png/line.png" class="img-fluid" id="underline" alt="contact us" ></img>
+        </div>
+    </div>
+    <br><br><br>
+
+    <p id="contact"><strong>We love to hear your feedback! If you have any questions or comments, please fill out the form below. We’ll be in touch within 3-5 business days.</strong></p><br>
+
+    <!-- Contact us form using Bootstrap Form Class  -->
+    <form action="https://webdev.scs.ryerson.ca/~vandreut/ultimateFoods/contactForm.php" method="POST">
+        <br>
+            <div class="form-group row">
+                <input type="text" class="form-control" name="name" placeholder="Name" required> <br>
+            </div>
+            <div class="form-group row">
+                <input type="text" class="form-control" name="email" placeholder="Email" required> <br>            
+            </div>
+            <div class="form-group row">
+                <input type="text" class="form-control" name="phone" placeholder="Phone Number" required> <br>    
+            </div>
+            <div class="form-group row">
+                <select class="form-control" name="category" required>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Customer Service">Customer Service</option>
+                    <option value="Nutrition">Nutrition</option>
+                    <option value="Products">Product</option>
+                    <option value="Coupons">Accuracy</option>
+                    <option value="Quality">Quality</option>
+                    <option value="Other">Other</option>
+                </select><br>                   
+            </div>
+            <div class="form-group row">
+        <textarea name="comment" class="form-control" rows= "8" cols="50" placeholder="Comment" required></textarea>                
+            </div><br><br>   
+        <input type="submit">                                      
+        <br><br>    
+    </form>       
+    <br><br>
+
+    <!-- Footer using Bootstrap classes/properties -->
+    <footer class="page-footer">
+        <div class="container-fluid text-center" style="background-color:  #c7aa89;">
+            <div class="row">
+                <div class="col-md-3 mx-auto"><br><br>
+                    <h3 class="text-uppercase" style="color: #5C2E00;"><strong>Our Mission</strong></h3><br>
+                    <span style="font-size:17px; padding: none;">From our ovens to your table, we pride ourselves in delivering a variety of different high quality food to you and your loved ones.</span>
+                </div>
+                <div class="col-md-3 mx-auto"><br><br>
+                    <img src="./png/platterlogo1.png" class="center-block" style="height:60px; width:80px;"></img>
+                    <h3 class="text-uppercase " style="color: #5C2E00; 	font-family: 'Courgette', bold; "><strong>Ultimate Foods</Strong></h3>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mx-auto"><br><br>
+                    <h3 class="text-uppercase" style="color: #5C2E00;"><strong>Links</strong></h3><br>
+        
+                    <ul class="list-unstyled" style="text-align: center;">
+                        <li style="color:black">
+                            <a style="color: black;font-size:20px;" href="./menuIndex.html">Browse the menu</a>
+                        </li>
+                        <li style="color:black">
+                            <a style="color: black;font-size:20px;" href ="./coupons.html">View coupons</a>
+                        </li>
+                        <li style="color:black">
+                            <a  style="color: black; font-size:20px;" href="contactForm.html">Contact us</a>
+                        </li>
+                    </ul>
+        
+                </div>
+            </div>
+        </div>
+    <div class="footer-copyright text-center py-3" style="background-color:  #c7aa89;"><em>@Copyright 2020-2021<strong>  <a style="color:black"href="./index.html"> Ultimate Foods</a></strong> All rights reserved.</em>
+         
+    </div>
+    </footer>  
+</body>
+</html>
